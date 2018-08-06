@@ -24,6 +24,10 @@ android {
     dataBinding {
         enabled = true
     }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
 }
 
 dependencies {
@@ -47,12 +51,16 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:$rootProject.ext.okhttpVersion"
     implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.ext.okhttpVersion"
 
+
+    implementation "android.arch.lifecycle:extensions:1.0.0"
+
     //Rx
     implementation "com.jakewharton.rxbinding2:rxbinding:$rootProject.ext.rxBindingVersion"
     implementation "com.jakewharton.rxbinding2:rxbinding-appcompat-v7:$rootProject.ext.rxBindingVersion"
 
     // Injection
     implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
 
     testImplementation 'junit:junit:4.12'

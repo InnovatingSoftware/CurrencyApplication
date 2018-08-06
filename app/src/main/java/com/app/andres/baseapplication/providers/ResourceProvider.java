@@ -1,4 +1,4 @@
-package com.app.andres.baseapplication.Providers;
+package com.app.andres.baseapplication.providers;
 
 import android.content.Context;
 import android.support.annotation.ArrayRes;

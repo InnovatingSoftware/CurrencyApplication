@@ -3,7 +3,7 @@ package com.app.andres.baseapplication.di.modules;
 import android.app.Application;
 import android.content.Context;
 
-import com.app.andres.baseapplication.Providers.ResourceProvider;
+import com.app.andres.baseapplication.providers.ResourceProvider;
 import com.app.andres.baseapplication.api.config.ApiConfig;
 import com.app.andres.baseapplication.eventbus.RxBus;
 import com.app.andres.baseapplication.managers.preferences.PrefsManager;
